@@ -2,9 +2,9 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-3 bg-neutral text-neutral-content flex justify-evenly">
-        <nav>Copyright © 2023 - All right reserved</nav>
-        <nav className="flex text-white gap-5 capitalize text-md">
+      <footer className="footer md:p-3 bg-neutral text-neutral-content flex md:flex-row justify-evenly flex-col">
+        <nav className="mx-auto">Copyright © 2023 - All right reserved</nav>
+        <nav className="flex text-white gap-5 capitalize text-md mx-auto">
           {/* <div className="grid grid-flow-col gap-4">
     </div> */}
           <a href="https://www.linkedin.com/in/md-rifatul-islam">
