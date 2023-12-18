@@ -1,0 +1,15 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+/* @media only screen and (max-width: 425px) {
+  section {
+    transform: none;
+  }
+} */
