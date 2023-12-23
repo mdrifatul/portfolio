@@ -39,8 +39,7 @@ const Navbar = () => {
           </div>
           <div data-aos="fade-down">
             <a
-            className="btn bg-white border-none text-xl hover:bg-white">
-              
+            className="bg-white border-none text-2xl hover:bg-white font-bold">
               rifat.dev
             </a>
           </div>
