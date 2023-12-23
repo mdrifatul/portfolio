@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const Skill = ({name, x, y}) =>{
   return(
     <>
-    <motion.div className="flex items-center justify-center rounded-full font-semibold bg-black py-3 px-4 shadow-black text-white absolute" 
+    <motion.div className="flex items-center justify-center rounded-full font-semibold bg-black md:py-3 px-3 md:px-4 shadow-black text-white absolute" 
     whileHover={{scale:1.05}}
     initial={{x:0,y:0}}
     whileInView={{x:x,y:y}}
@@ -16,7 +16,9 @@ const Skill = ({name, x, y}) =>{
 
 const Skills = () => {
   return (
-    <div>
+    <div data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="300">
       <h2 className="font-bold text-7xl w-full text-center mt-20 mb-10">Skills</h2>
       <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
         <motion.div className="flex items-center justify-center rounded-full font-semibold bg-black p-4 shadow-black text-white" whileHover={{scale:1.05}}>web</motion.div>

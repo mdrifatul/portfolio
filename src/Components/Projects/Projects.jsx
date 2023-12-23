@@ -3,12 +3,20 @@ const Projects = () => {
     <>
       <div>
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
+          <h1
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
             Projects
           </h1>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl">
+      <div 
+      data-aos="zoom-out-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+       className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl">
         <div className="flex justify-center items-center">
           <a href="https://challengeforge-7ce2b.web.app">
             <img
@@ -36,7 +44,11 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl my-16 ">
+      <div
+      data-aos="zoom-out-up"
+      data-aos-easing="linear"
+      data-aos-duration="400"
+      className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl my-16 ">
         <div className="flex justify-center items-center">
           <a href="https://crave-67227.web.app">
             <img
@@ -65,7 +77,11 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl ">
+      <div
+      data-aos="zoom-out-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+      className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl ">
         <div className="flex justify-center items-center">
           <a href="https://drivewave-c7ec5.web.app">
             <img
@@ -75,7 +91,7 @@ const Projects = () => {
             />
           </a>
         </div>
-        <div className="flex flex-col md:w-96 p-4 md:p-0 text-gray-700 md:mb-10">
+        <div className="flex flex-col md:w-96 p-4 md:p-0 text-gray-700 md:my-10">
           <h1 className="text-2xl font-bold mb-2">Crave</h1>
           <p className="text-gray-600">
             An integrated automotive marketplace offering a comprehensive

@@ -37,15 +37,15 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <a 
+          <div data-aos="fade-down">
+            <a
             className="btn bg-white border-none text-xl hover:bg-white">
               
               rifat.dev
             </a>
           </div>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div data-aos="fade-down" className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold">
             <li>
               <a href="#about">About</a>
