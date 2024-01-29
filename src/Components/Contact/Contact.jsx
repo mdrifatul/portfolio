@@ -1,3 +1,5 @@
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
@@ -5,6 +7,20 @@ import { RiMessengerLine } from "react-icons/ri";
 
 
 const Contact = () => {
+
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_q7njoam', 'template_87pp00j', form.current, 'sFFcWSn4w_Yhebe_W')
+      .then((result) => {
+          console.log(result.text);
+          form.current.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+  };
+
   return (
     <div className="lg:h-screen lg:mb-32 md:mb-20 w-10/12 mx-auto">
       <h1
@@ -43,24 +59,26 @@ const Contact = () => {
         </div>
       </div>
       <div className="md:w-3/6 mx-auto my-10 md:my-0">
-        <form className="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="300"
-          type="text" placeholder="Name" required className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg"/>
+          type="text" placeholder="Name" required className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg"
+          name="from_name"/>
           <input
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="350"
-          type="email" placeholder="Email" className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg my-5" required />
+          type="email" placeholder="Email" className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg my-5" required name="from_email"/>
           <textarea
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="400"
-          name="" placeholder="Message" className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg h-48"></textarea>
+          placeholder="Message" className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg h-48" name="message"></textarea>
           <br />
           <button
+          type="submit"
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="420"
