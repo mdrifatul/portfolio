@@ -23,8 +23,8 @@ const Contact = () => {
           console.log(result.text);
           form.current.reset();
           toast.success('Message send successfully!', {
-            position: "top-right",
-            autoClose: 5000,
+            position: "top-center",
+            autoClose: 1500,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
