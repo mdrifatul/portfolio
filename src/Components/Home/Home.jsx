@@ -19,6 +19,7 @@ const Home = () => {
       <div id='contact'><Contact></Contact></div>
     </div>
       <div><Footer></Footer></div>
+
     </>
   );
 };
