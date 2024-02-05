@@ -1,9 +1,9 @@
-import { IoCallOutline } from 'react-icons/io5';
-import { MdOutlineMailOutline } from "react-icons/md";
 
+import { IoCallOutline } from 'react-icons/io5';
+import { MdOutlineMailOutline } from 'react-icons/md';
 const About = () => {
   return (
-      <div className="grid grid-cols-2 lg:h-screen md:my-16 w-11/12 mx-auto gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen md:my-16 w-11/12 mx-auto gap-10">
       <div className="py-10">
           <h1
           data-aos="fade-up"
@@ -42,17 +42,16 @@ const About = () => {
         data-aos="fade-up"
         className="p-5 border border-gray-200 rounded-b-lg font-semibold w-full hover:bg-slate-100 hover:scale-105 duration-100"><p className="flex text-2xl text-gray-600">Higher Secondary school</p></div>
         <div className="flex md:gap-2 w-full flex-col lg:flex-row md:mt-5 lg:mt-0">
-        {/* <div className="flex md:mt-5 lg:mt-0"> */}
-          <div
+          <div 
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="480"
-          className="p-4 bg-slate-100 w-fit lg:my-5 rounded-lg font-semibold hover:bg-slate-200 shadow-lg hover:scale-105 duration-100 mt-5 md:mt-0"><p className="flex text-md"><MdOutlineMailOutline className="text-xl mt-1 mr-3 " />mdrifatulislam@gmail.com</p></div>
+          className="py-3 px-1 bg-slate-100 w-fit lg:my-5 rounded-lg font-semibold hover:bg-slate-200 shadow-md hover:scale-105 duration-100 mt-5 md:mt-0"><p className="flex font-semibold"><MdOutlineMailOutline className="text-lg mt-1 mr-2 " />mdrifatulislam@gmail.com</p></div>
           <div
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="500"
-          className="p-4 bg-slate-100 hover:bg-slate-200 w-fit lg:my-5 rounded-lg shadow-lg hover:scale-105 duration-100 mt-5 md:mt-0"><p className="flex text-md font-semibold"><IoCallOutline className="text-xl mt-1 mr-3 " /> +8801309727771</p></div>
+          className="py-3 px-1 bg-slate-100 hover:bg-slate-200 w-fit lg:my-5 rounded-lg shadow-md hover:scale-105 duration-100 mt-5 md:mt-0"><p className="flex font-semibold"><IoCallOutline className="text-lg mt-1 mr-2 " /> +8801309727771</p></div>
         </div>
       </div>
       
