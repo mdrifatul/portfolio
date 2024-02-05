@@ -1,15 +1,14 @@
 
-import About from '../About';
-import Navbar from '../Navbar';
+import About from './../About';
 import Contact from './../Contact/Contact';
 import Footer from './../Footer/Footer';
+import Navbar from './../Navbar';
 import Projects from './../Projects/Projects';
 import Skills from './../Skills/Skills';
 import './Home.css';
 
 const Home = () => {
   return (
-
     <>
     <div className="w-11/12 mx-auto ">
       <div><Navbar></Navbar></div>

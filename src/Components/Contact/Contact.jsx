@@ -52,7 +52,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row  mt-20 justify-around">
         <div className="md:w-3/6 ">
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="350"
             className="p-6 bg-slate-100 shadow-md w-60 text-center mx-auto rounded-lg"
@@ -62,7 +62,7 @@ const Contact = () => {
             <p className="text-md text-slate-700">mdrifatulislam08@gmail.com</p>
           </div>
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="400"
             className="p-6 bg-slate-100 shadow-md w-60 text-center mx-auto rounded-lg my-5"
@@ -72,7 +72,7 @@ const Contact = () => {
             <p className="text-md text-slate-700">+8801309727771</p>
           </div>
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="420"
             className="p-6 bg-slate-100 shadow-md w-60 text-center mx-auto rounded-lg"
@@ -90,37 +90,37 @@ const Contact = () => {
         <div className="md:w-3/6 mx-auto my-10 md:my-0">
           <form ref={form} onSubmit={sendEmail}>
             <input
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="300"
               type="text"
-              placeholder="Name"
+              placeholder="Name "
               required
-              className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg"
+              className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg placeholder-gray-600"
               name="from_name"
             />
             <input
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="350"
               type="email"
               placeholder="Email"
-              className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg my-5"
+              className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg my-5 placeholder-gray-600"
               required
               name="from_email"
             />
             <textarea
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="400"
               placeholder="Message"
-              className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg h-48"
+              className="w-80 outline-none border-1 p-4 bg-slate-200 rounded-lg h-48 placeholder-gray-600" 
               name="message"
             ></textarea>
             <br />
             <button
               type="submit"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="420"
               className="btn mt-3 bg-slate-900 text-white"

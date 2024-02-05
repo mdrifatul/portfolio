@@ -7,15 +7,12 @@ const Projects = () => {
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="500"
-          className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
+          className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 mt-10">
             Projects
           </h1>
         </div>
       </div>
       <div 
-      data-aos="zoom-out-up"
-      data-aos-easing="linear"
-      data-aos-duration="500"
        className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl">
         <div className="flex justify-center items-center">
           <a href="https://challengeforge-7ce2b.web.app">
@@ -45,9 +42,6 @@ const Projects = () => {
         </div>
       </div>
       <div
-      data-aos="zoom-out-up"
-      data-aos-easing="linear"
-      data-aos-duration="400"
       className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl my-16 ">
         <div className="flex justify-center items-center">
           <a href="https://crave-67227.web.app">
@@ -78,9 +72,6 @@ const Projects = () => {
         </div>
       </div>
       <div
-      data-aos="zoom-out-up"
-      data-aos-easing="linear"
-      data-aos-duration="500"
       className="flex flex-col md:flex-row justify-evenly border rounded-lg border-gray-400 lg:w-10/12 mx-auto shadow-2xl ">
         <div className="flex justify-center items-center">
           <a href="https://drivewave-c7ec5.web.app">
